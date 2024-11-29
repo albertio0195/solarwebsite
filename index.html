@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- order is important, so that my reset file will be applied first. Before than my styling css file. -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+<body>
+   <div class="container">
+    <header>
+        <div class="header">
+            <div class="logo-image">
+                <a href="#">THE <span class="logo-stripe">SYSTEM</span></a>
+                <!-- <div class="logo-strip"></div> -->
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Planets</a></li>
+                    <li><a href="#">Interseller</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!-- <button>Contact</button> -->
+            </nav>
+        </div>      
+    </header>
+    <main id="main-content">
+        <section class="part-1" role="region" aria-label="Website's Main Heading">
+            <div class="heading-banner">
+                <div class="image-container">
+                    <img src="images/milky-way.jpg" alt="picture of milky way">
+                </div>
+                <div class="header-text">
+                    <p>THE SYSTEM MAGAZINE</p>
+                    <h1>Welcome to the <span class="gradient-text">Solar System</span></h1>
+                    <p>Take atour around the coolest steller system around</p>
+                </div>
+            </div>
+        </section>
+        <section class="part-2">
+            <h2>Meet the Locals</h2>
+            <div class="locals">
+                <div class="sun card">
+                    <img src="images/sun.jpg" alt="picture of a red burning sun">
+                    <h3>The Sun</h3>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Sun'">Learn More</button>
+                    <!-- i used button link instead of using ancher tag, i did not see any rules in rule break about linking tag -->
+                </div>
+                <div class="mercury card">
+                    <img src="images/mercury.jpg" alt="Picture of mercury">
+                    <h3>Mercury</h3>
+                    <button  onclick="location.href='https://en.wikipedia.org/wiki/Mercury_(planet)'">Learn More</button>
+                </div>
+                <div class="venus card">
+                    <img src="images/venus.jpg" alt="Picture of venus">
+                    <h3>Venus</h3>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Venus'">Learn More</button>
+                </div>
+                <div class="earth card">
+                    <img src="images/earth.jpg" alt="Picture of earth">
+                    <h3>Earth</h3>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Earth'">Learn More</button>
+                </div>
+                <div class="moon card">
+                    <img src="images/moon.jpg" alt="Picture of moon">
+                    <h3>The Moon</h3>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Moon'">Learn More</button>
+                </div>
+                <div class="mars-card card">
+                    <img src="images/mars.jpg" alt="Picture of mars">
+                    <h3>Mars</h3>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Mars'">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <hr> -->
+    <footer>
+        <p>&copy;2024-The System</p>
+    </footer>
+   </div>
+    
+</body>
+</html>
