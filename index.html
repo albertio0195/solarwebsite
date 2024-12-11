@@ -3,87 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <!-- order is important, so that my reset file will be applied first. Before than my styling css file. -->
-    <link rel="stylesheet" href="css/reset.css">
+    <title>THE SYSTEM</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-
 </head>
 <body>
-   <a href="#main-content" class="skip-nav-link">Skip to Nav</a>
-   <a href="#main-content" class="skip-link">Skip to content</a>
-   <div class="container">
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="#">THE <span class="logo-stripe">SYSTEM</span></a>
+        <nav>
+            <div class="logo">THE <span class="highlight">SYSTEM</span></div>
+            <div class="nav-links">
+                <a href="#planets">Planets</a>
+                <a href="#interstellar">Interstellar</a>
+                <a href="#contact" class="contact-btn">Contact</a>
             </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">Planets</a></li>
-                    <li><a href="#">Interseller</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>      
+        </nav>
     </header>
-    <main id="main-content">
-        <section class="section-1" role="region" aria-label="Website's Main Heading">
-            <div class="heading-banner">
-                <div class="image-container">
-                    <img src="images/milky-way.jpg" alt="picture of milky way">
-                </div>
-                <div class="header-text">
-                    <p>THE SYSTEM MAGAZINE</p>
-                    <h1>Welcome to the <span class="gradient-text">Solar System</span></h1>
-                    <p>Take atour around the coolest steller system around</p>
-                </div>
+
+    <main>
+        <section class="hero">
+            <img src="images/milky-way.jpg" alt="Hero Image" class="hero-img">
+            <div class="hero-text">
+            <div class="hero-text-container">
+                <div class="magazine-label">THE SYSTEM MAGAZINE</div>
+                <h1 class="hero-text">Welcome to the <span class="highlight">Solar System</span></h1>
+                <p class="hero-text">Take a tour around the coolest stellar system around.</p>
+            </div>
             </div>
         </section>
-        <section class="section-2">
+
+        <section class="locals">
             <h2>Meet the Locals</h2>
-            <div class="locals-container">
-                <div class="sun-card card">
-                    <img src="images/sun.jpg" alt="picture of a red burning sun">
+            <div class="planets-grid">
+                <div class="planet-card">
+                    <img src="images/sun.jpg" alt="The Sun">
                     <h3>The Sun</h3>
-                    <button onclick="location.href='https://en.wikipedia.org/wiki/Sun'">Learn More</button>
+                    <button class="learn-more purple">Learn More</button>
                 </div>
-                <div class="mercury-card card">
-                    <img src="images/mercury.jpg" alt="Picture of mercury">
+                <div class="planet-card">
+                    <img src="images/mercury.jpg" alt="Mercury">
                     <h3>Mercury</h3>
-                    <button  onclick="location.href='https://en.wikipedia.org/wiki/Mercury_(planet)'">Learn More</button>
+                    <button class="learn-more purple">Learn More</button>
                 </div>
-                <div class="venus-card card">
-                    <img src="images/venus.jpg" alt="Picture of venus">
+                <div class="planet-card">
+                    <img src="images/venus.jpg" alt="Venus">
                     <h3>Venus</h3>
-                    <button onclick="location.href='https://en.wikipedia.org/wiki/Venus'">Learn More</button>
+                    <button class="learn-more blue">Learn More</button>
                 </div>
-                <div class="earth-card card">
-                    <img src="images/earth.jpg" alt="Picture of earth">
+                <div class="planet-card">
+                    <img src="images/earth.jpg" alt="Earth">
                     <h3>Earth</h3>
-                    <button onclick="location.href='https://en.wikipedia.org/wiki/Earth'">Learn More</button>
+                    <button class="learn-more blue">Learn More</button>
                 </div>
-                <div class="moon-card card">
-                    <img src="images/moon.jpg" alt="Picture of moon">
+                <div class="planet-card">
+                    <img src="images/moon.jpg" alt="The Moon">
                     <h3>The Moon</h3>
-                    <button onclick="location.href='https://en.wikipedia.org/wiki/Moon'">Learn More</button>
+                    <button class="learn-more purple">Learn More</button>
                 </div>
-                <div class="mars-card card">
-                    <img src="images/mars.jpg" alt="Picture of mars">
+                <div class="planet-card">
+                    <img src="images/mars.jpg" alt="Mars">
                     <h3>Mars</h3>
-                    <button onclick="location.href='https://en.wikipedia.org/wiki/Mars'">Learn More</button>
+                    <button class="learn-more purple">Learn More</button>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy;2024-The System</p>
+        <p>&copy; 2024 - The System</p>
     </footer>
-   </div>
-    
 </body>
 </html>
